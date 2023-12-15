@@ -6,6 +6,18 @@ Examen práctico de una API en la asignatura de Entornos de Servidor. Realizada 
 
 Desarrollar una aplicación web para la gestión de datos de un cliente sobre un sistema de control de asistencia a clase en el centro Celia Viñas. La aplicación se debe basar en el patrón ``MVC`` en la parte del __backend__ y la información se guardará en una base de datos de 2 tablas llamadas 'alumnado' y 'faltas'. *El desarrollo de la vista es opcional.*
 
+| Implementar las siguientes rutas | Descripción |
+| --------------------------------- | -----------|
+| Mostrar alumnos | Realiza una operación SELECT sobre la tabla de alumnado devolviendo todos los registros. |
+| Insertar alumnos | Realiza una operación INSERT sobre la tabla de alumnado que permita crear un alumno. |
+| Borrar alumnos | Realiza una operación DELETE que a partir de la ID alumno permita borrar al alumno y sus faltas de la base de datos. |
+| Modificar alumnos | Realiza una operación PUT que modifique los datos del alumno. |
+| Mostrar faltas | Realiza una consulta SELECT que liste todas las faltas. |
+| Justificar una falta | Realiza un PUT para poder cambiar el valor BOOLEAN de FALSE a TRUE. |
+| Borrar las faltas | Dado un ID de falta realiza una operacion DELETE para eliminarla de la tabla falta. |
+| Mostrar una unica falta con nombre del alumno | Dado un ID realiza una operación SELECT para devolver los datos de un registro de la tabla falta. |
+| Mostrar un alumno individualmente | Dado un ID de alumno, realiza una operación SELECT para devolver sus datos. |
+
 ## Configuración.
 
 Todas las rutas se encuentran en el archivo ``rutas_test.rest``. Se puede usar la extension VScode ``__REST__`` para comprobar las rutas directamente desde el archivo.
