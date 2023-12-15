@@ -1,0 +1,61 @@
+
+### Obtener todos los alumnos
+GET http://localhost:3000/alumnado HTTP/1.1
+
+### Listar 1 alumno
+GET http://localhost:3000/alumnado/2
+
+### Añadir un alumno 
+POST http://localhost:3000/alumnado/crear HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Pepe",
+  "apellidos": "Lopez Montes"
+}
+
+### Borrar alumno
+DELETE http://localhost:3000/alumnado/borrar/5 HTTP/1.1
+
+### Borrar alumno QUE NO EXISTEN
+DELETE http://localhost:3000/alumnado/borrar/155 HTTP/1.1
+
+### Modificar alumnos
+PUT http://localhost:3000/alumnado/editar/3 HTTP/1.1
+Content-type: application/json
+
+{
+  "nombre": "Raluca",
+  "apellidos": "Aqui No hay quien viva"
+}
+
+### Listar las FALTAS del alumno que NO existen
+GET http://localhost:3000/faltas/7
+
+### Listar las FALTAS del alumno
+GET http://localhost:3000/faltas/1
+
+### Añadir falta a una falta por su ID
+POST http://localhost:3000/faltas/crear/6 HTTP/1.1
+Content-Type: application/json
+
+{
+  "moduloprofesional": "LM",
+  "tramohorario": "1M",
+  "diasemana": "Martes",
+  "justificada": 0
+}
+
+### Borrar falta
+DELETE http://localhost:3000/faltas/borrar/5 HTTP/1.1
+
+### Modificar falta, si la intentamos modificar de nuevo sale como 'ya justificada'
+PUT http://localhost:3000/faltas/justificar/1 HTTP/1.1
+Content-type: application/json
+
+{
+  "justificada": 1
+}
+
+### SELECCIONAR la FALTA y te dice al alumno que pertenece
+GET http://localhost:3000/faltas/seleccionar/1
