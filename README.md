@@ -1,6 +1,6 @@
 # Examen práctico de una API.
 
-Práctica realizada en 2-DAW, en la asignatura de Entornos de Servidor.
+Examen práctico de una API en la asignatura de Entornos de Servidor. Realizada con Node.js y Express. Sin vistas.
 
 ## Configuración.
 
