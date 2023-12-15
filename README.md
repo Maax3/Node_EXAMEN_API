@@ -2,6 +2,10 @@
 
 Examen práctico de una API en la asignatura de Entornos de Servidor. Realizada con Node.js y Express. Sin vistas.
 
+## Descripción del examen
+
+Desarrollar una aplicación web para la gestión de datos de un cliente sobre un sistema de control de asistencia a clase en el centro Celia Viñas. La aplicación se debe basar en el patrón ``MVC`` en la parte del __backend__ y la información se guardará en una base de datos de 2 tablas llamadas 'alumnado' y 'faltas'. *El desarrollo de la vista es opcional.*
+
 ## Configuración.
 
 Todas las rutas se encuentran en el archivo ``rutas_test.rest``. Se puede usar la extension VScode ``__REST__`` para comprobar las rutas directamente desde el archivo.
